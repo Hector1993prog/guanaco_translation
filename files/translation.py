@@ -185,12 +185,6 @@ def GPT_automatic_translator(
     print("Translation process completed.")
 
 
-from datasets import Dataset, DatasetDict
-from translation import load_lists_from_files
-import regex as re
-
-from datasets import DatasetDict, Dataset
-
 def create_dataset_from_pkl(
     prefix: list[str] = ['translated_set', 'translated_test'],
     pattern_list: list[str] = [r'La frase va a estar rodeada por triple Q:\n\n                QQQ', r'QQQ']
